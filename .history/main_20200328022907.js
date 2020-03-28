@@ -29,7 +29,7 @@ const moveCloud2 = () => {
     if (leftPosition2 > 80) {
         leftPosition2 = -80;
     }
-    leftPosition2 = leftPosition2 + 0.002;
+    leftPosition2 = leftPosition2 + 0.02;
     cloud2.forEach((cloud) => {
         // console.log(cloud);
         cloud.style.left = leftPosition2 + "vw";

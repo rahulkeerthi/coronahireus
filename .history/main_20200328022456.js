@@ -13,11 +13,11 @@ window.addEventListener('scroll', removeInvisible);
 
 const cloud1 = document.querySelectorAll('.cloud1')
 let leftPosition1 = -25;  
+if (leftPosition1 > 80) {
+    leftPosition2 = -80;
+}
 const moveCloud1 = () => {
-    if (leftPosition1 > 80) {
-        leftPosition2 = -80;
-    }
-    leftPosition1 = leftPosition1 + 0.001;
+    leftPosition1 = leftPosition1 + 0.01;
     cloud1.forEach((cloud) => {
         // console.log(cloud);
         cloud.style.left = leftPosition1 + "vw";
@@ -25,11 +25,11 @@ const moveCloud1 = () => {
 }
 const cloud2 = document.querySelectorAll('.cloud2')
 let leftPosition2 = 0;  
+if leftPosition2 > 80 {
+    leftPosition2 = -80;
+}
 const moveCloud2 = () => {
-    if (leftPosition2 > 80) {
-        leftPosition2 = -80;
-    }
-    leftPosition2 = leftPosition2 + 0.002;
+    leftPosition2 = leftPosition2 + 0.02;
     cloud2.forEach((cloud) => {
         // console.log(cloud);
         cloud.style.left = leftPosition2 + "vw";

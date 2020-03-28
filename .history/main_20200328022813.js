@@ -17,7 +17,7 @@ const moveCloud1 = () => {
     if (leftPosition1 > 80) {
         leftPosition2 = -80;
     }
-    leftPosition1 = leftPosition1 + 0.001;
+    leftPosition1 = leftPosition1 + 0.01;
     cloud1.forEach((cloud) => {
         // console.log(cloud);
         cloud.style.left = leftPosition1 + "vw";
@@ -29,14 +29,14 @@ const moveCloud2 = () => {
     if (leftPosition2 > 80) {
         leftPosition2 = -80;
     }
-    leftPosition2 = leftPosition2 + 0.002;
+    leftPosition2 = leftPosition2 + 0.02;
     cloud2.forEach((cloud) => {
         // console.log(cloud);
         cloud.style.left = leftPosition2 + "vw";
     })
 }
 
-setInterval(moveCloud1, 20);
+setInterval(moveCloud1, 2);
 setInterval(moveCloud2, 20);
 
 
