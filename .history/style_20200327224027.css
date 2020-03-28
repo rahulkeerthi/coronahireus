@@ -1,0 +1,15 @@
+.sky {
+    background-color: #9eb8e9;
+    height: 200px;
+    position: relative;
+}
+
+.hills {
+    position: absolute;
+    top: 200px;
+}
+
+.field {
+    background-color: #00cba9;
+    height: 100vh;
+}

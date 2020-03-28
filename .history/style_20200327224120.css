@@ -1,0 +1,18 @@
+.sky {
+    background-color: #9eb8e9;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.hills {
+    position: absolute;
+    top: 20%;
+    left: 0
+    z-index: 10;
+}
+
+.field {
+    background-color: #00cba9;
+    /* height: 100vh; */
+}

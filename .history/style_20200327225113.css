@@ -1,0 +1,29 @@
+body p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body h2 {
+
+}
+
+.wrapper {
+    /* position: relative; */
+}
+
+.sky {
+    background-color: #9eb8e9;
+    height: 30vh;
+}
+
+.hills {
+    background-color: #9eb8e9;
+}
+
+.field {
+    background-color: #00cba9;
+    height: 100vh;
+}
