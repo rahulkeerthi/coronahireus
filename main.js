@@ -11,15 +11,20 @@ const removeInvisible = () => {
 
 window.addEventListener('scroll', removeInvisible);
 
+// find the cloud
 const cloud1 = document.querySelectorAll('.cloud1')
+// set the cloud's initial position
 let leftPosition1 = -25;  
+// function to move the cloud
 const moveCloud1 = () => {
+    // if the cloud moves off-screen, reset it to the left
     if (leftPosition1 > 80) {
-        leftPosition2 = -80;
+        leftPosition1 = -80;
     }
+    // increment the left position VALUE
     leftPosition1 = leftPosition1 + 0.001;
     cloud1.forEach((cloud) => {
-        // console.log(cloud);
+        // increment the left position of each cloud element (front, mid, back) by 0.001vw
         cloud.style.left = leftPosition1 + "vw";
     })
 }
